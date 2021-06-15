@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta de lixo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="container-fluid">
+    <!-- container -->
+    <section class="container">
+        <!-- row -->
+        <article class="row d-flex align-items-center">
+
+            <!-- logo -->
+            <a href="./" class="col-md-2 d-flex justify-content-center">
+                <img src="./assets/images/Logo.png" class="img-fluid" id="menu-logo" alt="Logo da empresa - salve">
+            </a>
+
+            <!-- buscador -->
+            <form action="#" class="col-md-7 d-flex align-items-center">
+                <input type="text" name="name" placeholder="Procurar">
+
+                <button class="d-flex align-items-center">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                        <path fill-rule="evenodd"
+                              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    </svg>
+                </button>
+            </form>
+
+            <!-- administrativo do cliente -->
+            <ul class="col-md-3 nav d-flex align-items-center justify-content-around">
+                <li class="nav-item">
+                    <a href="login.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+
+                        Entrar
+                    </a>
+                </li>
+            </ul>
+            <!-- end administrativo do cliente -->
+
+        </article>
+        <!-- row -->
+    </section>
+    <!-- end container -->
+</header>
+<!-- end header -->
+
+<!-- menu do site -->
+<nav class="container-fluid nav-produtos">
+    <!-- container -->
+    <section class="container">
+        <!-- menu -->
+        <ul class="nav">
+            <!-- lista de itens -->
+            <li class="col-xl-2 col-lg-3 col-md-12 nav-item d-flex align-items-center">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                Coleta de Lixo
+
+                <!-- submenu -->
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#">
+                            Agendamento
+                        </a>
+                    </li>
+                </ul>
+                <!-- end submenu -->
+            </li>
+        </ul>
+        <!-- menu -->
+    </section>
+    <!-- end container -->
+</nav>
+
+<div class="container" id="cadastro">
+
+    <form class="needs-validation" novalidate method="post" action="conf/agendamento.php">
+        <div class="form-row">
+
+            <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email"
+                           aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor, escolha um nome de usuário.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control"  id="endereco"  name="endereco" placeholder="Endereco - Nº" required>
+                <div class="invalid-feedback">
+                    Por favor, informe uma Endereço válida.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control"  id="bairro" name="bairro" placeholder="Bairro" required>
+                <div class="invalid-feedback">
+                    Por favor, informe uma Bairro válida.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
+                <div class="invalid-feedback">
+                    Por favor, informe uma cidade válida.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="fone">Telefone</label>
+                <input type="text" class="form-control" id="fone" name="fone" placeholder="Telefone" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um Telefone válido.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um estado válido.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um CEP válido.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Importação de arquivo mídia</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Concordo com os termos e condições
+                </label>
+                <div class="invalid-feedback">
+                    Você deve concordar, antes de continuar.
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-success" type="submit">Enviar</button>
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid">
+    <!-- container -->
+    <section class="container produtos-itens">
+        <!-- menus -->
+        <section class="row">
+            <!-- atendimento -->
+            <article class="col-md-4">
+                <h4>
+                    Atendimento
+                </h4>
+                <!-- links -->
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="tel:+5511999999999">(11) 9 9999 9999</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="mailto:contato@sualoja.com.br">contato@sualoja.com.br</a>
+                    </li>
+
+                    <li class="nav-item">
+                        Horário de atendimento on-line: Segunda à sexta das 9:00 até as 17:30h
+                    </li>
+                </ul>
+            </article>
+            <!-- end atendimento -->
+        </section>
+        <!-- end menus -->
+    </section>
+    <!-- end container -->
+
+</footer>
+<!-- end Footer-->
+
+<!-- Arquivos Bootstrap -->
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+</body>
+</html>
